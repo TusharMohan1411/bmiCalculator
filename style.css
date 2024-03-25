@@ -1,0 +1,157 @@
+:root {
+    --color1: #51d6ca;
+    --color2: #5f22d9;
+    --color3: #ac73ff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body,
+html {
+    /* height: 100%; */
+    width: 100%;
+}
+
+body {
+    background-color: rgb(0, 255, 234);
+    margin-top: 0;
+}
+
+.bmiCont {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: fit-content;
+    margin: auto;
+    padding-bottom: 30px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 50px;
+    background-color: white;
+    border-radius: 50px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+.bmiCont .allcont {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-size: 20px;
+}
+
+#bmiHeader {
+    background-color: var(--color2);
+    color: white;
+    width: 100%;
+    border-radius: 30px 30px 0px 0px;
+}
+
+#mainBmiHead {
+    padding: 20px;
+    text-align: center;
+}
+
+#bmiBody {
+    width: 80%;
+}
+
+#bmiBody input {
+    margin: auto;
+    margin-top: 10px;
+    height: 40px;
+    font-size: 20px;
+    padding: 10px 20px;
+    text-align: center;
+    border: 0;
+    width: 80%;
+    border-bottom: 2px solid rgb(197, 197, 197);
+}
+
+#bmiBody label {
+    margin-top: 25px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    /* margin-bottom: 10px; */
+}
+
+#bmi-btn-cont {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+#bmi-btn-cont button {
+    font-size: 20px;
+    background-color: var(--color2);
+    margin-top: 20px;
+    border: 0;
+    width: 60%;
+    color: white;
+    font-weight: bold;
+    border-radius: 50px;
+    padding: 10px;
+    transition: 0.2s;
+}
+
+#bmi-btn-cont button:hover {
+    background-color: #4b13b9;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#bmiBody .yourBmi {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+#bmiBody #finalBmi {
+    font-size: 40px;
+}
+
+#bmiBody .yourBmi #bmiShow {
+    background-color: rgb(243, 243, 243);
+    color: var(--color2);
+    font-size: 30px;
+    font-weight: bold;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+#bmiBody .yourBmi #result {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+#height-error,
+#weight-error {
+    color: red !important;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+@media only screen and (max-width:480px) {
+    .bmiCont {
+        width: 330px;
+    }
+    #bmi-btn-cont button {
+        margin-top: 5px;
+    }
+    #bmiBody input {
+        width: 100%;
+    }
+}
