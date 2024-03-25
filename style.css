@@ -13,7 +13,7 @@
 
 body,
 html {
-    /* height: 100%; */
+    height: 100%;
     width: 100%;
 }
 
@@ -147,11 +147,20 @@ body {
 @media only screen and (max-width:480px) {
     .bmiCont {
         width: 330px;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
     #bmi-btn-cont button {
         margin-top: 5px;
     }
     #bmiBody input {
         width: 100%;
+    }
+    #bmiBody label {
+        margin-top: 13px;
+    }
+    #mainBmiHead {
+        padding: 15px;
+        font-size: 30px;
     }
 }
